@@ -5,11 +5,12 @@ using namespace std;
 
 
 int main(){
+    ofstream outTempStream;
     ifstream inTempStream;
     ofstream outLogStream;
     ifstream inUsrDeetsStream;
 
-
+    outTempStream.open("~/temp.txt");
     outLogStream.open("~/log.txt");
     char *tempOut;
     string finalOut;
@@ -26,7 +27,11 @@ int main(){
     system("echo \"`\" >> /tempusrdeets.txt");
     inUsrDeetsStream.getline(tempOut,0);
     outLogStream << tempOut << "\t";
-    system( realCommand);
+    outTempStream << realCommand;
+    inTempStream.open("~/temp.txt");
+    inTempStream.getline(tempOut,0);
+    system(tempOut);
+
     inTempStream.open("/temp.txt");
     while (1){
         inTempStream.getline(tempOut,50);
