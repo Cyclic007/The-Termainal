@@ -1,0 +1,3 @@
+C:/Users/sebas.000/CLionProjects/trminalllll/cmake-build-debug/CMakeFiles/trminalllll.dir
+C:/Users/sebas.000/CLionProjects/trminalllll/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/sebas.000/CLionProjects/trminalllll/cmake-build-debug/CMakeFiles/rebuild_cache.dir
